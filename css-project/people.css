@@ -1,0 +1,108 @@
+.people1{
+    width: 100%;
+    min-height: 92vh;
+    height: auto;
+    background-color: white;
+}
+
+.people1::-webkit-scrollbar{
+    display: none;
+    overflow-x: hidden;
+}
+
+.people1 h1{
+    text-align: center;
+    padding: 20px 10px 0px;
+    color: black;
+}
+
+.people1 h2{
+  font-family: 'Karla', sans-serif;
+  color: #000;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+  
+  .column {
+    float: left;
+    flex: 1;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    min-width: 300px;
+  }
+  
+  .people-card {
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    border-radius: 10px;
+    background-image: url(../Images/sergiu-valena-E4u_Zo9PET8-unsplash.jpg);
+    background-size:cover;
+    background-position: 10px;
+    background-color:#555;
+  }
+
+  .img-people{
+    margin: 10px 30px;
+    width:auto;
+    height: 100px;
+    border-radius: 50px;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+
+  .container p{
+    color: rgb(56, 56, 56);
+  }
+
+  .qualification{
+
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+
+  @media screen and (max-width: 800px) {
+    .people{
+        height: auto;
+    }
+    
+    .row{
+        display: block;
+        /* width: 100%; */
+        flex: none;
+    }
+
+    .people-card{
+        width:auto;
+        height: auto;
+    }
+    
+  }

@@ -1,0 +1,25 @@
+.slogan {
+    height: 50vh;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: -2;
+    background-image: url(../Images/sologan-background.jpg);
+    background-size: cover;
+    }
+
+.slogan div{
+    width: 100%;
+    text-align: center;
+    justify-self: center;
+    top: auto;
+    bottom: 5vh;
+    /* -webkit-text-stroke: 5px black; */
+    font-size: 10vh;
+    font-style: italic;
+    position: absolute;
+    overflow: auto;
+    color: black ;
+    z-index: -1;
+    background-color: transparent;
+}

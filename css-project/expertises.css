@@ -1,0 +1,116 @@
+.expertise{
+  width: 100%;
+  height: 92vh;
+  overflow: scroll;
+  background-image: url(../Images/daniel-straub-n5HOJGtYt4Q-unsplash.jpg);
+  background-size:cover;
+  background-blend-mode:exclusion;
+  background-color: white;
+}
+
+.expertise::-webkit-scrollbar{
+  display: none;
+  overflow-x: hidden;
+}
+
+.expertise h1{
+  text-align: center;
+  padding: 20px 10px 0px;
+  color: white;
+}
+
+.expertise p{
+  color: black;
+}
+
+.expertise h2{
+  padding-left: 10px;
+  color: white;
+}
+
+.expertise h3{
+  color: #000;
+  text-align: left;
+  padding-left: 0px;
+}
+  
+.tablink {
+  background-color: #555;
+  margin: 0px 10px;
+  color: white;  
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 20px;
+  width:40%;
+}
+  
+.tablink:hover {
+  background-color: var(--project-red);
+}
+  
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px 0px 10px;
+  height: auto;
+}
+  
+/* #practice {background-color: rgb(192, 169, 36)}
+#sectors {background-color: rgb(192, 169, 36)} */
+
+/*Content Box*/
+.row-expertise{
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+  
+.column-expertise {
+  float: left;
+  flex: 1;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  min-width: 300px;
+}
+  
+.card-expertise {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: white;
+}
+
+.img-people-expertise{
+    margin: 10px 30px;
+}
+
+.container-expertise {
+  padding: 0 16px;
+}
+
+.container-expertise::after, .row-expertise::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 800px) {
+  .expertise{
+      height: auto;
+  }
+  
+  .row-expertise{
+      display: block;
+      width: 100%;
+      flex: none;
+  }
+
+  .card-expertise{
+      width:auto;
+      height: auto;
+  }
+  
+}

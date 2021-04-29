@@ -1,0 +1,69 @@
+.foot{
+    height: 40vh;
+    background-color: black;
+    z-index: -2;
+    bottom: 0vh;
+    width: 100%;
+    position: fixed;
+    padding:10px;
+}
+
+h1,h3.foot{
+    color: white;
+}
+
+h3.foot{
+    left: 0px;
+}
+
+.footer-main{
+    display: flex;
+    width: 100%;
+}
+
+.office{
+    flex: 2;
+}
+
+.address{
+    display: flex;
+    width: 100%;
+}
+
+.loc{
+    flex: 1;
+    padding: 10px;
+}
+
+.social{
+    height: auto; 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.footer-demo{
+    background-color: transparent; 
+    height: 40vh;
+}
+
+@media screen and (max-width: 1300px) {
+    .foot{
+        height: fit-content;
+        z-index: 1;
+        position: relative;
+    }
+
+    .footer-demo{
+        display: none;
+    }
+
+    .footer-main{
+        display: block;
+    }
+
+    .office{
+        width: 100%;
+    }
+}
