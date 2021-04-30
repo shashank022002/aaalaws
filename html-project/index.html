@@ -426,44 +426,6 @@
 
       <div class="footer-demo" id="footer-demo">
       </div>
-
-      <!-- <footer class="page-footer font-small special-color-dark pt-4">
-
-      <!-- Footer Elements --/>
-      <div class="container" style="width: 100%;">
-    
-        <!-- Social buttons --/>
-        <ul class="list-unstyled list-inline text-center">
-          <li class="list-inline-item">
-            <a class="btn-floating btn-fb mx-1">
-              <i class="fab fa-facebook-f"> </i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="btn-floating btn-tw mx-1">
-              <i class="fab fa-twitter"> </i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="btn-floating btn-gplus mx-1">
-              <i class="fab fa-google-plus-g"> </i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="btn-floating btn-li mx-1">
-              <i class="fab fa-linkedin-in"> </i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="btn-floating btn-dribbble mx-1">
-              <i class="fab fa-dribbble"> </i>
-            </a>
-          </li>
-        </ul>
-        <!-- Social buttons --/>
-        <hr style="height: 10px;color: black;width: 100%;">
-      </div>
-      <!-- Footer Elements -->
         
       <script>
 
@@ -494,10 +456,7 @@
           }
           else if(width<=944){
             link.style.display="none";
-          }
-
-          
-          
+          }      
         }
         
         function navSlide(){
@@ -532,29 +491,11 @@
             burger.className = "burger";
           }
           setTimeout(() => { window.scrollBy(0, -79); }, 800);
-          console.log("Yeh");
         }
       </script>
 
       <!-- Expertise -->
-      <script>
-        function openPage(pageName,elmnt,color) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablink");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].style.backgroundColor = "";
-          }
-          document.getElementById(pageName).style.display = "block";
-          elmnt.style.backgroundColor = color;
-        }
-        
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-      </script>
+      <script src="../js-project/expertiseJS.js"></script>
 
       <!--Testimonials-->
       <script>
@@ -587,177 +528,10 @@
       </script>
 
       <!--Form Validation-->
-      <script>
-        // function formValidation(){
-        //   var userName=document.contactForm.userName;
-        //   var userEmail=document.contactForm.userEmail;
-        //   var userPhone=document.contactForm.userPhone;
-        //   var userMessage=document.contactForm.userMessage;
-
-        //   if(valid_name(userName)){
-        //     if(valid_email(userEmail)){
-        //       if(valid_phone(userPhone)){
-        //         if(valid_name(userMessage)){
-        //             break;
-        //         }
-        //       }
-        //     }
-        //     return false;
-        //     var form = document.getElementById("myForm");
-        //     function handleForm(event) { event.preventDefault(); } 
-        //     form.addEventListener('submit', handleForm);
-        //     alert("hihi");
-        //   }
-
-        //   function valid_name(info){
-        //     var name_length=info.value.length;
-        //     if(name_length==0){
-        //       info.style.borderColor="rgb(235, 52, 52)";
-        //       document.getElementById("name_error_message").style.display="block";
-        //       return false;
-        //     }
-        //     else if(name_length>=101){
-        //       info.style.borderColor="rgb(235, 52, 52)";
-        //       document.getElementById("name_error_message1").style.display="block";
-        //       return false;
-        //     }
-        //     else{
-        //       info.style.borderColor="transparent";
-        //       document.getElementById("name_error_message1").style.display="none";
-        //       document.getElementById("name_error_message").style.display="none";
-        //     }
-        //     return true;
-        //   }
-
-        //   function valid_email(info)
-        //   {
-        //     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-        //     if(info.value.match(mailformat))
-        //     {
-        //       info.style.borderColor="transparent";
-        //       document.getElementById("email_error_message").style.display="none";
-        //       return true;
-        //     }
-        //     else
-        //     {
-        //       info.style.borderColor="rgb(235, 52, 52)";
-        //       document.getElementById("email_error_message").style.display="block";
-        //       return false;
-        //     }
-        //   }
-
-        //   function valid_phone(info)
-        //   {
-        //     var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-        //     if(info.value.match(phoneno)){
-        //       info.style.borderColor="transparent";
-        //       document.getElementById("phone_error_message").style.display="none";
-        //       return true;
-        //     }
-        //     else{
-        //         info.style.borderColor="rgb(235, 52, 52)";
-        //         document.getElementById("phone_error_message").style.display="block";
-        //         return false;
-        //     }
-        //   }
-
-        //   function valid_message(info){
-        //     var name_length=info.value.length;
-        //     if(name_length==0){
-        //       info.style.borderColor="rgb(235, 52, 52)";
-        //       document.getElementById("message_error_message").style.display="block";
-        //       return false;
-        //     }
-        //     else if(name_length>=1001){
-        //       info.style.borderColor="rgb(235, 52, 52)";
-        //       document.getElementById("message_error_message1").style.display="block";
-        //       return false;
-        //     }
-        //     else{
-        //       info.style.borderColor="transparent";
-        //       document.getElementById("message_error_message1").style.display="none";
-        //       document.getElementById("message_error_message").style.display="none";
-        //     }
-        //     return true;
-        //   }
-        // }
-
-          function valid_name(info){
-            var name_length=info.value.length;
-            if(name_length==0){
-              info.style.borderColor="rgb(235, 52, 52)";
-              document.getElementById("name_error_message").style.display="block";
-              return false;
-            }
-            else if(name_length>=101){
-              info.style.borderColor="rgb(235, 52, 52)";
-              document.getElementById("name_error_message1").style.display="block";
-              return false;
-            }
-            else{
-              info.style.borderColor="transparent";
-              document.getElementById("name_error_message1").style.display="none";
-              document.getElementById("name_error_message").style.display="none";
-            }
-            return true;
-          }
-
-          function valid_email(info)
-          {
-            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-            if(info.value.match(mailformat))
-            {
-              info.style.borderColor="transparent";
-              document.getElementById("email_error_message").style.display="none";
-              return true;
-            }
-            else
-            {
-              info.style.borderColor="rgb(235, 52, 52)";
-              document.getElementById("email_error_message").style.display="block";
-              return false;
-            }
-          }
-
-          function valid_phone(info)
-          {
-            var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-            if(info.value.match(phoneno)){
-              info.style.borderColor="transparent";
-              document.getElementById("phone_error_message").style.display="none";
-              return true;
-            }
-            else{
-                info.style.borderColor="rgb(235, 52, 52)";
-                document.getElementById("phone_error_message").style.display="block";
-                return false;
-            }
-          }
-
-          function valid_message(info){
-            var name_length=info.value.length;
-            if(name_length==0){
-              info.style.borderColor="rgb(235, 52, 52)";
-              document.getElementById("message_error_message").style.display="block";
-              return false;
-            }
-            else if(name_length>=1001){
-              info.style.borderColor="rgb(235, 52, 52)";
-              document.getElementById("message_error_message1").style.display="block";
-              return false;
-            }
-            else{
-              info.style.borderColor="transparent";
-              document.getElementById("message_error_message1").style.display="none";
-              document.getElementById("message_error_message").style.display="none";
-            }
-            return true;
-          }
-
-        // }
-      </script>
+      <script src="../js-project/formValidationJS.js"></script>
 
       <script data-cfasync="false" type="text/javascript" src="../js-project/form-submission-handler.js"></script>
 
-      <script defer data-key="a394888b-4717-4eb2-aa27-2bee96227794" src="https://widget.tochat.be/bundle.js"></script>  </body>
+      <script defer data-key="a394888b-4717-4eb2-aa27-2bee96227794" src="https://widget.tochat.be/bundle.js"></script>  
+    </body>
 </html>
