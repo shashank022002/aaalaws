@@ -11,6 +11,11 @@
     background-blend-mode:color-burn;
 }
 
+.career::-webkit-scrollbar{
+    display: none;
+    overflow-x: hidden;
+}
+
 .career h1{
     padding: 10px 10px 0px;
     text-align: center;
