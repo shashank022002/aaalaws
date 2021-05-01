@@ -38,8 +38,10 @@ function valid_email(info)
 
 function valid_phone(info)
 {
-    var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-    if(info.value.match(phoneno)){
+    var phoneno0 = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+    var phoneno1 = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
+    var phoneno2 = /^\+?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+    if(info.value.match(phoneno0)||info.value.match(phoneno1)||info.value.match(phoneno2)){
       info.style.borderColor="transparent";
       document.getElementById("phone_error_message").style.display="none";
       return true;
