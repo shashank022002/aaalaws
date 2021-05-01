@@ -334,7 +334,7 @@
           </div>
 
           <div class="contact-form">
-            <form action="https://script.google.com/macros/s/AKfycbwLZbDhqZ9eP8LTG_Xgr4l8j5msCTk27XSqAAOrVg/exec" method="POST" enctype=”multipart/form-data” class="gform contactForm" name="contactForm" id="contactForm">
+            <form  method="POST" enctype=”multipart/form-data” class="gform contactForm" name="contactForm" id="contactForm">
               <label for="userName">Name</label>
               <input type="text" id="userName" name="userName" placeholder="Your name.." autocomplete="off" oninput="valid_name(document.contactForm.userName);" onblur="valid_name(document.contactForm.userName);">
               <span class="error_form" id="name_error_message" style="display: none;color: rgb(255, 0, 0);font-weight: 500;" >Input is required</span>
@@ -353,7 +353,7 @@
               <span class="error_form" id="message_error_message" style="display: none;color: rgb(255, 0, 0);font-weight: 500;">Input is required</span>
               <span class="error_form" id="message_error_message1" style="display: none;color: rgb(255, 0, 0);font-weight: 500;">1000 letters is the limit</span>
               
-              <input type="submit" value="Submit">
+              <input type="submit" value="Submit" onclick="submitButton();">
 
               <div style="display:none" class="thankyou_message">
                 <!-- You can customize the thankyou message by editing the code below -->
